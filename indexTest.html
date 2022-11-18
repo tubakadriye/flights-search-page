@@ -1,170 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f0048163d2.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    
-    <i class="fa-solid fa-thumbs-up fa-5x"></i>
-    <i class="fa-duotone fa-plane-departure"></i>
-    <i class="fa-solid fa-plane-departure"></i>
-    <main>
-
-      <section id="image">
-       <h1>Let the journey begin!</h1>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1087.0" data-gr-ext-installed="">
+  <main>
+      <section id="image" style="background-image: url(&quot;./tiber_river.jpeg&quot;);">
+          <h1>Let the journey begin!</h1>
       <section id="userInput">
-        <input
-          id="origin"
-          type="text"
-          placeholder="Enter Origin"
-        />
-        <input
-          id="destination"
-          type="text"
-          placeholder="Enter Destination"
-        />
-        <input id="flightDate" type="date" placeholder="Select Date" />
-        <button onclick="">Search Flights</button>
+          <input id="origin" type="text" placeholder="Enter Origin">
+          <input id="destination" type="text" placeholder="Enter Destination">
+          <input id="flightDate" type="date" placeholder="Select Date">
+          <button onclick="searchFlights()">Search Flights</button> 
       </section>
-    </section>
-      <section id="titles">
-        <div id="col1">
-            <span>Departure Time</span>
-            <span>Arrival Time</span>
-            <span>Price</span>
-        </div>
-      </section>
-    
-      <section id="flights">
-        <article id="Best">
-          <h3>Best</h3>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              />
-              <span>Air Europa</span>
-              <span>Flight Number: 1676</span>
-            </div>
-            
-            <span><i class="fa-solid fa-plane-departure"></i> 11:10</span>
-            <span><i class="fa-solid fa-plane-arrival"></i>13:30</span>
-            <span>92 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              />
-              <span>Air Europa</span>
-              <span>1672</span>
-            </div>
-            <span>18:35</span>
-            <span>20:55</span>
-            <span>108 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/IB.png"
-              />
-              <span>Iberia</span>
-              <span>3477</span>
-            </div>
-            <span>11:55</span>
-            <span>14:30</span>
-            <span>104 €</span>
-          </div>
-        </article>
-        <article id="Fastest">
-          <h3>Fastest</h3>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              /><span>Air Europa</span><span>1676</span>
-            </div>
-            <span>11:10</span><span>13:30</span><span>92 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              /><span>Air Europa</span><span>1672</span>
-            </div>
-            <span>18:35</span><span>20:55</span><span>108 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/07.png"
-              /><span>Vueling Airlines</span><span>5143</span>
-            </div>
-            <span>19:40</span><span>22:05</span><span>199 €</span>
-          </div>
-        </article>
-        <article id="Cheapest">
-          <h3>Cheapest</h3>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              /><span>Air Europa</span><span>1676</span>
-            </div>
-            <span>11:10</span><span>13:30</span><span>92 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/07.png"
-              /><span>Vueling Airlines</span><span>1389</span>
-            </div>
-            <span>13:50</span><span>21:45</span><span>96 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/IB.png"
-              /><span>Iberia</span><span>3477</span>
-            </div>
-            <span>11:55</span><span>14:30</span><span>104 €</span>
-          </div>
-        </article>
-        <article id="Direct">
-          <h3>Direct</h3>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              /><span>Air Europa</span><span>1676</span>
-            </div>
-            <span>11:10</span><span>13:30</span><span>92 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/UX.png"
-              /><span>Air Europa</span><span>1672</span>
-            </div>
-            <span>18:35</span><span>20:55</span><span>108 €</span>
-          </div>
-          <div class="flightDiv">
-            <div class="infoDiv">
-              <img
-                src="https://logos.skyscnr.com/images/airlines/favicon/IB.png"
-              /><span>Iberia</span><span>3477</span>
-            </div>
-            <span>11:55</span><span>14:30</span><span>104 €</span>
-          </div>
-        </article>
-      </section>
-    </main>
+  </section>
+  <section id="loading">
+      <p>Loading........</p>
+      <img src="388.gif" alt="Loading"> 
+  </section>
+  <section id="flights"></section>
+  
 
-    <script src="./script.js"></script>
-  </body>
+  </main>
+
+
+  <script src="./script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+// <![CDATA[  <-- For SVG support
+if ('WebSocket' in window) {
+  (function () {
+    function refreshCSS() {
+      var sheets = [].slice.call(document.getElementsByTagName("link"));
+      var head = document.getElementsByTagName("head")[0];
+      for (var i = 0; i < sheets.length; ++i) {
+        var elem = sheets[i];
+        var parent = elem.parentElement || head;
+        parent.removeChild(elem);
+        var rel = elem.rel;
+        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+        }
+        parent.appendChild(elem);
+      }
+    }
+    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+    var address = protocol + window.location.host + window.location.pathname + '/ws';
+    var socket = new WebSocket(address);
+    socket.onmessage = function (msg) {
+      if (msg.data == 'reload') window.location.reload();
+      else if (msg.data == 'refreshcss') refreshCSS();
+    };
+    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+      console.log('Live reload enabled.');
+      sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+    }
+  })();
+}
+else {
+  console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+}
+// ]]>
+</script>
+
+</body>
 </html>

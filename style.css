@@ -1,6 +1,14 @@
 html {
     font-family: 'Abel', sans-serif;
     font-weight: bolder;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #faebd7;
 }
 
 /*User Input*/
@@ -23,7 +31,7 @@ html {
 }
 
 #image {
-    border: 2px solid green; 
+    /* border: 2px solid green;  */
     background-image: url(./capodocia.jpg); 
     background-size: cover;
     background-position: center;
@@ -61,10 +69,25 @@ html {
 
 /*Flights*/
 
+
+#loading{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+#loading > * {
+    margin: 20px;
+}
+
 #flights{
-    display: grid;
-    grid-template-columns:auto auto;
-    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid white; */
     padding: 20px;
 }
 
@@ -72,16 +95,39 @@ html {
     display: flex;
     flex-direction: column;
     font-size: larger;
+    width: 50%;
 }
+
+@media only screen and (max-width: 500px) {
+    #flights{
+        
+        flex-direction: column;
+        
+    } 
+
+    #flights > article {
+        width: 100%;
+    }
+
+    #userInput {
+        flex-direction: column;
+    }
+
+  }
+  
+
 
 .flightDiv{
     display: flex;
-    flex-direction: row;
+    flex-wrap:wrap;
+    flex-direction: row; 
     border: 1px solid white;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px gray;
     margin: 10px;
     cursor: pointer;
+    align-items: center;
+
 }
 
 .flightDiv:hover{
@@ -97,16 +143,29 @@ html {
     flex-direction: column;
     flex-direction: center;
     align-items: center;
+    font-size: medium;
+    margin: auto;
+
+    
 }
+
+.infoDiv > * {
+    padding: 0.1rem;
+    margin: auto;
+}
+
 
 .infoDiv > img{
     height: 50px;
     width: 50px;
+   
+
 }
 
 .flightDiv > span{
     margin: auto;
     font-size: larger;
+    padding: 0.5rem;
 }
 
 span:nth-child(4){
@@ -120,4 +179,22 @@ h1 {
     /* left: 30px; */
     font-size: xx-large;
     padding: 2rem;
+    margin: 0;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    padding: 1rem;
+    color: rgb(91, 91, 91);
+}
+
+#flightHourDiv {
+    display: block;
+    margin: auto;
+    
+}
+

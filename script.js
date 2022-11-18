@@ -1,8 +1,12 @@
-const api_key = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiNDk2MDFlY2E4NDZiYzFlNzZmMjBiM2YyZGRlMDliMmU5MGI3ZWFhZTkwZDM1ZjUyN2JjYzg0ZmI3YjZmNmZiZmYyOTJhNTMwNzg4NTI0NWYiLCJpYXQiOjE2Njg2Nzk1NzAsIm5iZiI6MTY2ODY3OTU3MCwiZXhwIjoxNzAwMjE1NTcwLCJzdWIiOiIxODUxNCIsInNjb3BlcyI6W119.aiOM8cdfbdMZ4_sJgWn7hh2b2Znd6yViztRPtiCm-xeb72c6JIPyk9BCC7tD_HrCz7eypoMhThrjeWH3jU96og';
+// API KEY and urls
+const api_key = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiM2U2NmE2MzhiNWJjNWU1OGY0ZjM5MDNiNmNhNmI0NzFjMjllNWIxMDRkMWVlNzliYWJiZmJhYjIwYjRlNjM2NTM5NjYwZGE4MGFlOTM4OTIiLCJpYXQiOjE2Njg3NzEzODYsIm5iZiI6MTY2ODc3MTM4NiwiZXhwIjoxNzAwMzA3Mzg2LCJzdWIiOiIxODYzNCIsInNjb3BlcyI6W119.AtnpsXeQexBfswLcfb_HAKzG-XaheEDliCvD_auUxrdqGB3yhWaCakdEpBQEZQ0xM_XK7NfAqXxphZSW114ugA';
 let urlForIataCode = `http://app.goflightlabs.com/cities?access_key=${api_key}&search=`;
 
-let images = ["./capodocia.jpg","./sihlsee.jpeg","./tiber_river.jpeg"];
+let urlForFlights = `https://app.goflightlabs.com/search-best-flights?access_key=${api_key}&adults=1`;
 
+
+// image slider
+let images = ["./capodocia.jpg","./sihlsee.jpeg","./tiber_river.jpeg"];
 let imageelement= document.getElementById("image");
 let counter=0;
 
@@ -19,30 +23,43 @@ function slideToNext(){
     }
 }
 
-//let urlForFlights = `https://app.goflightlabs.com/search-best-flights?access_key=${api_key}&adults=1&origin=MAD&destination=FCO&departureDate=2022-11-20`
-let urlForFlights = `https://app.goflightlabs.com/search-best-flights?access_key=${api_key}&adults=1`
-let arr ;
 
-// HTML TAGS
+
+// Global Static HTML TAGS
 
 let originInput = document.getElementById('origin');
 let destinationInput = document.getElementById('destination');
 let departureDateInput = document.getElementById('flightDate');
 let fligtsSection = document.getElementById('flights');
+let loadingSection = document.getElementById('loading');
 
 //local storage get item
 let getStoredOrigin = localStorage.getItem('originValue');
 let getStoredDestination = localStorage.getItem('destinationValue');
 let getStoredDate = localStorage.getItem('dateValue');
 
+//stored input values
+originInput.value = getStoredOrigin;
+destinationInput.value = getStoredDestination;
+departureDateInput.value = getStoredDate;
 //fetch local storage
 getDataFromApi(getStoredOrigin,getStoredDestination,getStoredDate,urlForIataCode,urlForFlights);
 
 
+
 function searchFlights(){
-  fligtsSection.innerHTML = ""
+  fligtsSection.innerHTML = "";
+  loadingSection.style.display = 'flex';
+  fligtsSection.style.display='none';
   let {origin,destination,flightDate} = getUserInputs();
-  checkUserInputs(origin,destination,flightDate);
+  let valid = checkUserInputs(origin,destination,flightDate);
+  if(!valid){
+    loadingSection.style.display = 'none';
+    fligtsSection.style.display='flex';
+    clearInputs();
+    window.alert('Please Check Your Inputs!')
+    return
+  }
   console.log(origin,destination,flightDate);
   getDataFromApi(origin,destination,flightDate,urlForIataCode,urlForFlights)
 
@@ -72,8 +89,11 @@ function getUserInputs(){
 
 // add a check function for user inputs
 function checkUserInputs(origin,destination,flightDate){
-
-  return 1;
+  if(origin==""||destination==""||flightDate==""){
+    return false
+  }else{
+    return true
+  }
 }
 
 async function getDataFromApi(origin,destination,flightDate,urlForIataCode,urlForFlights){
@@ -83,6 +103,8 @@ async function getDataFromApi(origin,destination,flightDate,urlForIataCode,urlFo
 
   const jsonForOrigin = await responseForOrigin.json();
   const jsonForDestination = await responseForDestination.json();
+
+  console.log(jsonForOrigin);
   
   const iata_codeForOrigin = jsonForOrigin[0]['iata_code'];
   const iata_codeForDestination = jsonForDestination[0]['iata_code'];
@@ -91,6 +113,8 @@ async function getDataFromApi(origin,destination,flightDate,urlForIataCode,urlFo
 
   const responseForFlights = await fetch(urlForFlights);
   const jsonForFlights = await responseForFlights.json();
+  loadingSection.style.display = 'none';
+  fligtsSection.style.display='flex';
 
   console.log(iata_codeForOrigin,iata_codeForDestination);
   console.log(jsonForFlights['data']);
@@ -103,21 +127,11 @@ async function getDataFromApi(origin,destination,flightDate,urlForIataCode,urlFo
     let categoryArticle = document.createElement('article');
     categoryArticle.setAttribute('id',name);
     let categoryHead = document.createElement('h3');
-    categoryHead.innerText = name
+    categoryHead.innerText = name;
     categoryArticle.appendChild(categoryHead);
     fligtsSection.appendChild(categoryArticle);
-    let items = buckets[i]['items']
-    let price;
-    let flightNumber;
-    let departureTime;
-    let departureDate;
-    let departureHour;
-    let arrivalTime;
-    let arrivalDate;
-    let arrivalHour;
-    let companyName;
-    let companyLogoUrl;
-    let deeplink;
+    let items = buckets[i]['items'];
+    let {price,flightNumber,departureTime,departureDate,departureHour,arrivalTime,arrivalDate,arrivalHour,companyName,companyLogoUrl}='';
       for(let j=0;j<items.length;j++){
         deeplink = items[j]['deeplink'];
         let legs = items[j]['legs'][0];
@@ -140,13 +154,6 @@ async function getDataFromApi(origin,destination,flightDate,urlForIataCode,urlFo
 }
 
 
-// Unit Test for functions
-function test(){
-  //console.log(getUserInputs());
-  getDataFromApi(origin,destination,flightDate,urlForIataCode,urlForFlights,)
-}
-
-
 function createAndSetTags(companyLogoUrl,companyName,flightNumber,departureHour,arrivalHour,price,categoryArticle,deeplink ){
   let linkelement = document.createElement('a');
   let fligtDiv = document.createElement('div');
@@ -158,18 +165,24 @@ function createAndSetTags(companyLogoUrl,companyName,flightNumber,departureHour,
   let logoImg = document.createElement('img');
   let companyNameSpan = document.createElement('span');
   let flightNumberSpan = document.createElement('span');
-  let departureHourSpan = document.createElement('span')
+  let flightHourDiv = document.createElement('div');
+  let departureHourSpan = document.createElement('span');
+  let departureIcon = document.createElement('i');
   let arrivalHourSpan = document.createElement('span');
+  let arrivalIcon = document.createElement('i');
   let priceSpan = document.createElement('span');
 
   // set
   linkelement.href = deeplink;
   logoImg.src = companyLogoUrl;
   companyNameSpan.innerText = companyName;
-  flightNumberSpan.innerText = 'Flight Number: ' + flightNumber;
+  flightNumberSpan.innerText = 'Flight Nr.: ' + flightNumber;
   departureHourSpan.innerText = departureHour;
   arrivalHourSpan.innerText = arrivalHour;
   priceSpan.innerText = price;
+  departureIcon.setAttribute('class','fa-solid fa-plane-departure');
+  arrivalIcon.setAttribute('class','fa-solid fa-plane-arrival');
+  flightHourDiv.setAttribute('id','flightHourDiv');
 
   // append
 
@@ -177,33 +190,29 @@ function createAndSetTags(companyLogoUrl,companyName,flightNumber,departureHour,
   infoDiv.appendChild(companyNameSpan);
   infoDiv.appendChild(flightNumberSpan);
 
+  departureHourSpan.appendChild(departureIcon);
+  arrivalHourSpan.appendChild(arrivalIcon);
+
   fligtDiv.appendChild(infoDiv);
-  fligtDiv.appendChild(departureHourSpan);
-  fligtDiv.appendChild(arrivalHourSpan)
+  fligtDiv.appendChild(flightHourDiv);
+  flightHourDiv.appendChild(departureHourSpan);
+  flightHourDiv.appendChild(arrivalHourSpan);
+  // fligtDiv.appendChild(departureHourSpan);
+  // fligtDiv.appendChild(arrivalHourSpan)
   fligtDiv.appendChild(priceSpan);
   linkelement.appendChild(fligtDiv);
 
   
   categoryArticle.appendChild(linkelement);
+  //clearInputs();
+  
 
 }
 
+function clearInputs(){
+  originInput.value = "";
+  destinationInput.value ="";
+  departureDateInput.value ="";
+}
 
 
-// let images = ["family.jpg","family2.jpeg","family3.jpeg","family5.jpeg","family6.jpeg"];
-
-// let imgTag = document.getElementsByTagName("img")[0];
-// let counter=0;
-
-
-// setInterval(slideToNext,2000);
-// function slideToNext(){
-//     counter++;
-//     if(counter === images.length){
-//         counter=0;
-//     }
-//     if(counter < images.length){
-//         let nextSlide = images[counter];
-//         imgTag.src = nextSlide;
-//     }
-// }
