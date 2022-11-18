@@ -1,0 +1,1195 @@
+{
+    "success": true,
+    "data": {
+    "buckets": [
+    {
+    "id": "Best",
+    "name": "Best",
+    "items": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "price": {
+    "raw": 95,
+    "formatted": "95 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241110-2211241330--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1676",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 25.122143
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 8.84771,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241110--32680-0-13870-2211241330?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241835--32680-0-13870-2211242055",
+    "price": {
+    "raw": 109,
+    "formatted": "109 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241835--32680-0-13870-2211242055",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T18:35:00",
+    "arrival": "2022-11-24T20:55:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241835-2211242055--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T18:35:00",
+    "arrival": "2022-11-24T20:55:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1672",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 26.239807
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 7.67551,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241835--32680-0-13870-2211242055?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241155--32222-0-13870-2211241430",
+    "price": {
+    "raw": 104,
+    "formatted": "104 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241155--32222-0-13870-2211241430",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 155,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:55:00",
+    "arrival": "2022-11-24T14:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32222,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+    "name": "Iberia"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241155-2211241430--32222",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:55:00",
+    "arrival": "2022-11-24T14:30:00",
+    "durationInMinutes": 155,
+    "flightNumber": "3477",
+    "marketingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    },
+    "operatingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 20.09517
+    },
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 7.2851,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241155--32222-0-13870-2211241430?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    }
+    ]
+    },
+    {
+    "id": "Fastest",
+    "name": "Fastest",
+    "items": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "price": {
+    "raw": 95,
+    "formatted": "95 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241110-2211241330--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1676",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 25.122143
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 8.84771,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241110--32680-0-13870-2211241330?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241835--32680-0-13870-2211242055",
+    "price": {
+    "raw": 109,
+    "formatted": "109 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241835--32680-0-13870-2211242055",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T18:35:00",
+    "arrival": "2022-11-24T20:55:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241835-2211242055--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T18:35:00",
+    "arrival": "2022-11-24T20:55:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1672",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 26.239807
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 7.67551,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241835--32680-0-13870-2211242055?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241940--31685-0-13870-2211242205",
+    "price": {
+    "raw": 201,
+    "formatted": "201 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241940--31685-0-13870-2211242205",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 145,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T19:40:00",
+    "arrival": "2022-11-24T22:05:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -31685,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/07.png",
+    "name": "Vueling Airlines"
+    }
+    ],
+    "operating": [
+    {
+    "id": -32222,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+    "name": "Iberia"
+    }
+    ],
+    "operationType": "not_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241940-2211242205--31685",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T19:40:00",
+    "arrival": "2022-11-24T22:05:00",
+    "durationInMinutes": 145,
+    "flightNumber": "5143",
+    "marketingCarrier": {
+    "id": -31685,
+    "name": "Vueling Airlines",
+    "alternateId": "07",
+    "allianceId": 0
+    },
+    "operatingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 20.09517
+    },
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 4.01624,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241940--31685-0-13870-2211242205?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    }
+    ]
+    },
+    {
+    "id": "Cheapest",
+    "name": "Cheapest",
+    "items": [
+    {
+    "id": "18563-2211241350--31685,-32680-1-13870-2211242145",
+    "price": {
+    "raw": 84,
+    "formatted": "84 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241350--31685,-32680-1-13870-2211242145",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 475,
+    "stopCount": 1,
+    "isSmallestStops": false,
+    "departure": "2022-11-24T13:50:00",
+    "arrival": "2022-11-24T21:45:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -31685,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/07.png",
+    "name": "Vueling Airlines"
+    },
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-9409-2211241350-2211241605--31685",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "ALC",
+    "parent": {
+    "flightPlaceId": "ALIC",
+    "name": "Alicante",
+    "type": "City"
+    },
+    "name": "Alicante",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T13:50:00",
+    "arrival": "2022-11-24T16:05:00",
+    "durationInMinutes": 135,
+    "flightNumber": "1389",
+    "marketingCarrier": {
+    "id": -31685,
+    "name": "Vueling Airlines",
+    "alternateId": "07",
+    "allianceId": 0
+    },
+    "operatingCarrier": {
+    "id": -31685,
+    "name": "Vueling Airlines",
+    "alternateId": "07",
+    "allianceId": 0
+    }
+    },
+    {
+    "id": "9409-13870-2211242040-2211242145--32680",
+    "origin": {
+    "flightPlaceId": "ALC",
+    "parent": {
+    "flightPlaceId": "ALIC",
+    "name": "Alicante",
+    "type": "City"
+    },
+    "name": "Alicante",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T20:40:00",
+    "arrival": "2022-11-24T21:45:00",
+    "durationInMinutes": 65,
+    "flightNumber": "4050",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": true,
+    "tags": [
+    "cheapest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 2.67943,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241350--31685,-32680-1-13870-2211242145?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "price": {
+    "raw": 95,
+    "formatted": "95 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241110-2211241330--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1676",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 25.122143
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 8.84771,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241110--32680-0-13870-2211241330?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241155--32222-0-13870-2211241430",
+    "price": {
+    "raw": 104,
+    "formatted": "104 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241155--32222-0-13870-2211241430",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 155,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:55:00",
+    "arrival": "2022-11-24T14:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32222,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+    "name": "Iberia"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241155-2211241430--32222",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:55:00",
+    "arrival": "2022-11-24T14:30:00",
+    "durationInMinutes": 155,
+    "flightNumber": "3477",
+    "marketingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    },
+    "operatingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 20.09517
+    },
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 7.2851,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241155--32222-0-13870-2211241430?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    }
+    ]
+    },
+    {
+    "id": "Direct",
+    "name": "Direct",
+    "items": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "price": {
+    "raw": 95,
+    "formatted": "95 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241110--32680-0-13870-2211241330",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241110-2211241330--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:10:00",
+    "arrival": "2022-11-24T13:30:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1676",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 25.122143
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 8.84771,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241110--32680-0-13870-2211241330?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241835--32680-0-13870-2211242055",
+    "price": {
+    "raw": 109,
+    "formatted": "109 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241835--32680-0-13870-2211242055",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 140,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T18:35:00",
+    "arrival": "2022-11-24T20:55:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32680,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/UX.png",
+    "name": "Air Europa"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241835-2211242055--32680",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T18:35:00",
+    "arrival": "2022-11-24T20:55:00",
+    "durationInMinutes": 140,
+    "flightNumber": "1672",
+    "marketingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    },
+    "operatingCarrier": {
+    "id": -32680,
+    "name": "Air Europa",
+    "alternateId": "UX",
+    "allianceId": -31998
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 26.239807
+    },
+    "tags": [
+    "shortest"
+    ],
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 7.67551,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241835--32680-0-13870-2211242055?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    },
+    {
+    "id": "18563-2211241155--32222-0-13870-2211241430",
+    "price": {
+    "raw": 104,
+    "formatted": "104 €"
+    },
+    "legs": [
+    {
+    "id": "18563-2211241155--32222-0-13870-2211241430",
+    "origin": {
+    "id": "ZRH",
+    "name": "Zurich",
+    "displayCode": "ZRH",
+    "city": "Zurich",
+    "isHighlighted": false
+    },
+    "destination": {
+    "id": "MAD",
+    "name": "Madrid",
+    "displayCode": "MAD",
+    "city": "Madrid",
+    "isHighlighted": false
+    },
+    "durationInMinutes": 155,
+    "stopCount": 0,
+    "isSmallestStops": true,
+    "departure": "2022-11-24T11:55:00",
+    "arrival": "2022-11-24T14:30:00",
+    "timeDeltaInDays": 0,
+    "carriers": {
+    "marketing": [
+    {
+    "id": -32222,
+    "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/IB.png",
+    "name": "Iberia"
+    }
+    ],
+    "operationType": "fully_operated"
+    },
+    "segments": [
+    {
+    "id": "18563-13870-2211241155-2211241430--32222",
+    "origin": {
+    "flightPlaceId": "ZRH",
+    "parent": {
+    "flightPlaceId": "ZURI",
+    "name": "Zurich",
+    "type": "City"
+    },
+    "name": "Zurich",
+    "type": "Airport"
+    },
+    "destination": {
+    "flightPlaceId": "MAD",
+    "parent": {
+    "flightPlaceId": "MADR",
+    "name": "Madrid",
+    "type": "City"
+    },
+    "name": "Madrid",
+    "type": "Airport"
+    },
+    "departure": "2022-11-24T11:55:00",
+    "arrival": "2022-11-24T14:30:00",
+    "durationInMinutes": 155,
+    "flightNumber": "3477",
+    "marketingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    },
+    "operatingCarrier": {
+    "id": -32222,
+    "name": "Iberia",
+    "alternateId": "IB",
+    "allianceId": -32000
+    }
+    }
+    ]
+    }
+    ],
+    "isSelfTransfer": false,
+    "eco": {
+    "ecoContenderDelta": 20.09517
+    },
+    "isMashUp": false,
+    "hasFlexibleOptions": false,
+    "score": 7.2851,
+    "deeplink": "https://www.skyscanner.net/transport/flights/zrh/mad/221124/config/18563-2211241155--32222-0-13870-2211241430?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&destinationentityid=27544850&originentityid=27537524&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&preferdirects=false&ref=home&rtn=0"
+    }
+    ]
+    }
+    ]
+    }
+    }

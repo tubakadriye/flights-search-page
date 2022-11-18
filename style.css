@@ -1,0 +1,123 @@
+html {
+    font-family: 'Abel', sans-serif;
+    font-weight: bolder;
+}
+
+/*User Input*/
+
+
+#userInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+    /* background-image: url(./capodocia.jpg); 
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; */
+    /* min-height: 300px; */
+}
+
+#image {
+    border: 2px solid green; 
+    background-image: url(./capodocia.jpg); 
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+#userInput > * {
+    padding: 8px;
+    font-size: large;
+    margin: 5px;
+    height: 2rem;
+}
+
+#userInput > button {
+    padding: 8px;
+    cursor: pointer;
+    height: 3.5rem;
+    background-color: rgb(205, 44, 44);
+    color: white;
+    font-size: medium;
+    border: rgb(205, 44, 44);
+}
+
+#userInput > button:hover {
+    background-color: black;
+    border: black;
+    transform: scale(1.1);
+
+    
+}
+
+#userInput > #flightDate {
+    cursor: pointer;
+}
+
+/*Flights*/
+
+#flights{
+    display: grid;
+    grid-template-columns:auto auto;
+    border: 2px solid green;
+    padding: 20px;
+}
+
+#flights > article {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.flightDiv{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px gray;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.flightDiv:hover{
+    transform: scale(1.05);
+    background-color: rgb(216, 216, 216);
+    
+}
+.flightDiv > * {
+    margin: 20px;
+}
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
+}
+
+.infoDiv > img{
+    height: 50px;
+    width: 50px;
+}
+
+.flightDiv > span{
+    margin: auto;
+    font-size: larger;
+}
+
+span:nth-child(4){
+    font-style: italic;
+    font-size: x-large;
+}
+
+h1 {
+    /* position: absolute; */
+    color: white;
+    /* left: 30px; */
+    font-size: xx-large;
+    padding: 2rem;
+}
